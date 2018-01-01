@@ -1,0 +1,23 @@
+// CONTAINERS
+
+.main-content {
+  +on(tablet) {
+    display: flex
+    flex-wrap: wrap
+  }
+  +on(desktop) {
+    center(0)
+  }
+}
+
+.inner {
+  padding: 0.5em 1em
+}
+
+.intro {
+  margin: auto
+  padding: 1em 1em 3em 
+  +on(smartTV) {
+    width: 45%
+  }
+}

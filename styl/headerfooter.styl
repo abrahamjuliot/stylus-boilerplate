@@ -1,0 +1,45 @@
+// HEADER & FOOTER
+header {
+  height: 460px
+  background: linear-gradient(
+    color-bg-light,
+    color-bg), 
+    url('../bg.jpg') no-repeat
+  background-blend-mode: multiply
+  background-size: cover
+  +on(phone) {
+    height: 340px
+  }
+  +on(smartTV) {
+    background-position: 0 0, 0 45%
+  }
+  h1 {
+    color: white
+    font-size: 4.8em
+    margin-bottom: 0
+    letter-spacing: 1px
+    +on(phone) {
+      font-size: 3.4em
+    }
+  }
+  p {
+    color: color-accent
+    font-size: 1.25em
+    margin: 0
+  }
+  +skewed(-2deg, 50px) {
+    background-color: white
+    bottom: -25px
+  } 
+}
+
+footer {
+  padding: 2em 0 0
+  height: 100px
+  background-color: color-shade
+  margin-top: 3.5em
+  +skewed(-2deg, 50px) {
+    background-color: color-shade
+    top: -25px
+  } 
+}
